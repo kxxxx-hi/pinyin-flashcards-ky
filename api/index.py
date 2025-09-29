@@ -1,6 +1,5 @@
 # api/index.py
-# FastAPI app for Vercel. Serves a single-page game: "Which one are you hearing?"
-# Data live in data.json (same repo root). UI in English; only 'text' is Chinese.
+# FastAPI app for Vercel. Single-page game with constant English meaning display.
 
 from fastapi import FastAPI, Response
 from pathlib import Path
@@ -39,13 +38,15 @@ HTML = r"""<!doctype html>
         <span id="counter" class="text-sm font-semibold text-gray-800">0 / 0</span>
       </div>
 
-      <button id="play" class="mb-6 w-20 h-20 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 hover:bg-indigo-200 btn" title="Play audio">
+      <button id="play" class="mb-4 w-20 h-20 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 hover:bg-indigo-200 btn" title="Play audio">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
         </svg>
       </button>
 
-      <div id="prompt" class="text-xl text-gray-700 mb-2"></div>
+      <!-- Chinese text and constant English meaning -->
+      <div id="prompt" class="text-2xl text-gray-900 mb-1"></div>
+      <div id="meaning" class="text-sm text-gray-600 mb-6"></div>
 
       <div id="choices" class="grid grid-cols-2 gap-4 w-full max-w-md"></div>
 
@@ -58,20 +59,18 @@ HTML = r"""<!doctype html>
     </div>
 
     <p class="text-xs text-gray-500 text-center mt-4">
-      Tip: The audio speaks the Chinese word. You choose the matching pinyin with the correct tone.
+      Tip: The audio speaks the Chinese word. Match the pinyin with the correct tone.
     </p>
   </main>
 </div>
 
 <script>
   const DATA = __DATA__;
-
-  // Use Web Speech API for audio
   const synth = window.speechSynthesis;
 
   let items = Array.isArray(DATA?.pinyinPairs) ? DATA.pinyinPairs.slice(0) : [];
   let i = 0;
-  let current = null; // {text, correct, distractor}
+  let current = null; // {text, en, correct, distractor}
 
   const playBtn = document.getElementById('play');
   const repeatBtn = document.getElementById('repeat');
@@ -80,6 +79,7 @@ HTML = r"""<!doctype html>
   const counter = document.getElementById('counter');
   const feedback = document.getElementById('feedback');
   const promptNode = document.getElementById('prompt');
+  const meaningNode = document.getElementById('meaning');
 
   function shuffle(arr){
     for(let k=arr.length-1;k>0;k--){
@@ -104,6 +104,7 @@ HTML = r"""<!doctype html>
       choicesDiv.innerHTML = '<p class="text-gray-500 col-span-2">No data found. Provide pinyinPairs in data.json.</p>';
       counter.textContent = '0 / 0';
       promptNode.textContent = '';
+      meaningNode.textContent = '';
       feedback.textContent = '';
       return;
     }
@@ -113,8 +114,9 @@ HTML = r"""<!doctype html>
     const q = items[i % items.length];
     current = q;
 
-    // Show Chinese text
+    // Show Chinese and constant English meaning
     promptNode.textContent = q.text || '';
+    meaningNode.textContent = q.en || '';
 
     // Render two choices
     const opts = shuffle([q.correct, q.distractor]);
@@ -159,7 +161,6 @@ HTML = r"""<!doctype html>
 
 @app.get("/")
 def root() -> Response:
-    # Load data.json beside this file (repo root at runtime)
     data_path = Path("data.json")
     try:
         data = json.loads(data_path.read_text(encoding="utf-8"))
