@@ -53,4 +53,117 @@ HTML = r"""<!doctype html>
 
       <div class="mt-6 flex items-center justify-between text-sm text-gray-600 w-full max-w-md">
         <button id="repeat" class="px-3 py-2 rounded-lg border bg-white hover:bg-gray-50 btn">Repeat</button>
-        <button
+        <button id="next" class="px-3 py-2 rounded-lg border bg-white hover:bg-gray-50 btn">Next</button>
+      </div>
+    </div>
+
+    <p class="text-xs text-gray-500 text-center mt-4">
+      Tip: The audio speaks the Chinese word. You choose the matching pinyin with the correct tone.
+    </p>
+  </main>
+</div>
+
+<script>
+  const DATA = __DATA__;
+
+  // Use Web Speech API for audio
+  const synth = window.speechSynthesis;
+
+  let items = Array.isArray(DATA?.pinyinPairs) ? DATA.pinyinPairs.slice(0) : [];
+  let i = 0;
+  let current = null; // {text, correct, distractor}
+
+  const playBtn = document.getElementById('play');
+  const repeatBtn = document.getElementById('repeat');
+  const nextBtn = document.getElementById('next');
+  const choicesDiv = document.getElementById('choices');
+  const counter = document.getElementById('counter');
+  const feedback = document.getElementById('feedback');
+  const promptNode = document.getElementById('prompt');
+
+  function shuffle(arr){
+    for(let k=arr.length-1;k>0;k--){
+      const j = Math.floor(Math.random()*(k+1));
+      [arr[k],arr[j]]=[arr[j],arr[k]];
+    }
+    return arr;
+  }
+  function speak(text){
+    if(!text) return;
+    if(synth.speaking) synth.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'zh-CN';
+    u.rate = 0.95;
+    synth.speak(u);
+  }
+  function setCounter(){
+    counter.textContent = `${items.length ? i+1 : 0} / ${items.length}`;
+  }
+  function render(){
+    if(!items.length){
+      choicesDiv.innerHTML = '<p class="text-gray-500 col-span-2">No data found. Provide pinyinPairs in data.json.</p>';
+      counter.textContent = '0 / 0';
+      promptNode.textContent = '';
+      feedback.textContent = '';
+      return;
+    }
+    feedback.textContent = '';
+    feedback.className = 'h-6 text-center font-medium mt-4';
+
+    const q = items[i % items.length];
+    current = q;
+
+    // Show Chinese text
+    promptNode.textContent = q.text || '';
+
+    // Render two choices
+    const opts = shuffle([q.correct, q.distractor]);
+    choicesDiv.innerHTML = '';
+    opts.forEach(opt => {
+      const b = document.createElement('button');
+      b.textContent = opt;
+      b.className = 'w-full px-4 py-3 border border-gray-300 rounded-lg text-lg font-semibold bg-white text-gray-800 hover:bg-gray-50 btn';
+      b.onclick = () => check(opt);
+      choicesDiv.appendChild(b);
+    });
+
+    // Auto play once
+    setTimeout(()=> speak(q.text || ''), 150);
+    setCounter();
+  }
+  function check(selected){
+    const buttons = choicesDiv.querySelectorAll('button');
+    buttons.forEach(btn => {
+      btn.disabled = true;
+      if(btn.textContent === current.correct) btn.classList.add('correct');
+      else if(btn.textContent === selected) btn.classList.add('incorrect');
+    });
+    if(selected === current.correct){
+      feedback.textContent = 'Correct';
+      feedback.classList.add('text-green-600');
+    } else {
+      feedback.textContent = 'Incorrect';
+      feedback.classList.add('text-red-600');
+    }
+  }
+
+  playBtn.addEventListener('click', () => speak(current?.text || ''));
+  repeatBtn.addEventListener('click', () => speak(current?.text || ''));
+  nextBtn.addEventListener('click', () => { i = (i + 1) % (items.length || 1); render(); });
+
+  // Init
+  render();
+</script>
+</body>
+</html>"""
+
+@app.get("/")
+def root() -> Response:
+    # Load data.json beside this file (repo root at runtime)
+    data_path = Path("data.json")
+    try:
+        data = json.loads(data_path.read_text(encoding="utf-8"))
+    except Exception:
+        data = {"pinyinPairs": []}
+    html = HTML.replace("__DATA__", json.dumps(data, ensure_ascii=False))
+    return Response(content=html, media_type="text/html")
