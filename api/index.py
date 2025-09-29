@@ -1,6 +1,4 @@
 # api/index.py
-# FastAPI app for Vercel. Single-page game with constant English meaning display.
-
 from fastapi import FastAPI, Response
 from pathlib import Path
 import json
@@ -44,7 +42,7 @@ HTML = r"""<!doctype html>
         </svg>
       </button>
 
-      <!-- Chinese text and constant English meaning -->
+      <!-- Chinese and constant English meaning -->
       <div id="prompt" class="text-2xl text-gray-900 mb-1"></div>
       <div id="meaning" class="text-sm text-gray-600 mb-6"></div>
 
@@ -81,6 +79,51 @@ HTML = r"""<!doctype html>
   const promptNode = document.getElementById('prompt');
   const meaningNode = document.getElementById('meaning');
 
+  // ---- Pinyin tone mark conversion (display only) ----
+  function toToneMarks(pinyinStr){
+    if(!pinyinStr) return "";
+    // Per-syllable: find trailing tone digit 1-4 (0/5 = neutral), apply to vowel.
+    const toneMap = {
+      'a': ['ā','á','ǎ','à'], 'e': ['ē','é','ě','è'], 'i': ['ī','í','ǐ','ì'],
+      'o': ['ō','ó','ǒ','ò'], 'u': ['ū','ú','ǔ','ù'], 'ü': ['ǖ','ǘ','ǚ','ǜ']
+    };
+    function convertSyllable(syl){
+      if(!syl) return syl;
+      // Handle ü written as "u:" or "v"
+      syl = syl.replace(/u:/gi,'ü').replace(/v/gi,'ü');
+      const m = syl.match(/^([a-zāēīōūǖü]+)([1-5])$/i);
+      let base = syl, tone = 0;
+      if(m){
+        base = m[1];
+        tone = parseInt(m[2],10);
+      }
+      if(tone===0 || tone===5 || !/[aeiouü]/i.test(base)) return base;
+      const lower = base.toLowerCase();
+      // Priority: a > e > o; for iu/ui mark second vowel
+      let idx = -1;
+      if(lower.includes('a')) idx = lower.indexOf('a');
+      else if(lower.includes('e')) idx = lower.indexOf('e');
+      else if(lower.includes('ou')) idx = lower.indexOf('o');
+      else if(lower.includes('o')) idx = lower.indexOf('o');
+      else if(lower.includes('iu')) idx = lower.indexOf('u'); // second in "iu"
+      else if(lower.includes('ui')) idx = lower.indexOf('i'); // second in "ui"
+      else {
+        // pick last vowel
+        const last = Math.max(lower.lastIndexOf('i'), lower.lastIndexOf('u'), lower.lastIndexOf('ü'));
+        idx = last;
+      }
+      if(idx < 0) return base;
+      const ch = base[idx];
+      const key = ch.toLowerCase();
+      const rep = toneMap[key] ? toneMap[key][tone-1] : ch;
+      // preserve case
+      const repFinal = (ch===ch.toUpperCase()) ? rep.toUpperCase() : rep;
+      return base.slice(0,idx) + repFinal + base.slice(idx+1);
+    }
+    // Split by space to keep multi-syllable spacing intact
+    return pinyinStr.split(/\s+/).map(convertSyllable).join(' ');
+  }
+
   function shuffle(arr){
     for(let k=arr.length-1;k>0;k--){
       const j = Math.floor(Math.random()*(k+1));
@@ -114,33 +157,32 @@ HTML = r"""<!doctype html>
     const q = items[i % items.length];
     current = q;
 
-    // Show Chinese and constant English meaning
     promptNode.textContent = q.text || '';
     meaningNode.textContent = q.en || '';
 
-    // Render two choices
     const opts = shuffle([q.correct, q.distractor]);
     choicesDiv.innerHTML = '';
     opts.forEach(opt => {
       const b = document.createElement('button');
-      b.textContent = opt;
+      b.textContent = toToneMarks(opt);       // display with accents
+      b.dataset.val = opt;                    // keep original numbered value for checking
       b.className = 'w-full px-4 py-3 border border-gray-300 rounded-lg text-lg font-semibold bg-white text-gray-800 hover:bg-gray-50 btn';
-      b.onclick = () => check(opt);
+      b.onclick = () => check(b.dataset.val);
       choicesDiv.appendChild(b);
     });
 
-    // Auto play once
     setTimeout(()=> speak(q.text || ''), 150);
     setCounter();
   }
-  function check(selected){
+  function check(selectedVal){
     const buttons = choicesDiv.querySelectorAll('button');
     buttons.forEach(btn => {
       btn.disabled = true;
-      if(btn.textContent === current.correct) btn.classList.add('correct');
-      else if(btn.textContent === selected) btn.classList.add('incorrect');
+      const isCorrect = btn.dataset.val === current.correct;
+      if(isCorrect) btn.classList.add('correct');
+      else if(btn.dataset.val === selectedVal) btn.classList.add('incorrect');
     });
-    if(selected === current.correct){
+    if(selectedVal === current.correct){
       feedback.textContent = 'Correct';
       feedback.classList.add('text-green-600');
     } else {
@@ -153,7 +195,6 @@ HTML = r"""<!doctype html>
   repeatBtn.addEventListener('click', () => speak(current?.text || ''));
   nextBtn.addEventListener('click', () => { i = (i + 1) % (items.length || 1); render(); });
 
-  // Init
   render();
 </script>
 </body>
