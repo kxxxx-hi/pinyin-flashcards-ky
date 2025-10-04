@@ -60,7 +60,7 @@ HOMEPAGE_HTML = r"""<!doctype html>
       </div>
 
     <div class="text-center mt-8">
-      <p class="text-sm text-gray-500">Choose a game to start your Mandarin learning journey!</p>
+      <p class="text-sm text-gray-500">Choose an exercise to practice Chinese!</p>
     </div>
   </main>
 </div>
