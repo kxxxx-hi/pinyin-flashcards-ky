@@ -35,7 +35,7 @@ HOMEPAGE_HTML = r"""<!doctype html>
         <h2 class="text-xl font-bold text-indigo-900 mb-3">🎵 Pinyin Tone Listening</h2>
         <p class="text-gray-700 mb-4">Listen to Chinese words and choose the correct pinyin pronunciation.</p>
         <a href="/game/pinyin" class="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 btn block text-center">
-          Play Game
+          Start
         </a>
       </div>
 
@@ -44,7 +44,7 @@ HOMEPAGE_HTML = r"""<!doctype html>
         <h2 class="text-xl font-bold text-green-900 mb-3">📚 HSK 1 Lesson 4-6 Vocabulary</h2>
         <p class="text-gray-700 mb-4">Chinese vocabulary flash cards.</p>
         <a href="/game/hsk" class="w-full bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 btn block text-center">
-          Play Game
+          Start
         </a>
       </div>
     </div>
