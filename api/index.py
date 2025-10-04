@@ -31,23 +31,33 @@ HOMEPAGE_HTML = r"""<!doctype html>
   <main class="space-y-6">
     <div class="grid grid-cols-1 gap-6">
       <!-- Game 1: Pinyin Listening -->
-      <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-6 border border-indigo-200">
-        <h2 class="text-xl font-bold text-indigo-900 mb-3">🎵 Pinyin Tone Listening</h2>
-        <p class="text-gray-700 mb-4">Listen to Chinese words and choose the correct pinyin pronunciation.</p>
-        <a href="/game/pinyin" class="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 btn block text-center">
-          Start
-        </a>
-      </div>
-
+        <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-6 border border-indigo-200">
+          <div class="flex items-center justify-between gap-4">
+            <div>
+              <h2 class="text-xl font-bold text-indigo-900">🎵 Pinyin Tone Listening</h2>
+              <p class="text-gray-700">Listen to Chinese words and choose the correct pinyin pronunciation.</p>
+            </div>
+            <a href="/game/pinyin"
+               class="bg-indigo-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-indigo-700 btn whitespace-nowrap shrink-0">
+              Start
+            </a>
+          </div>
+        </div>
+        
       <!-- Game 2: HSK Flash Cards -->
-      <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6 border border-green-200">
-        <h2 class="text-xl font-bold text-green-900 mb-3">📚 HSK 1 Lesson 4-6 Vocabulary</h2>
-        <p class="text-gray-700 mb-4">Chinese vocabulary flash cards.</p>
-        <a href="/game/hsk" class="w-full bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 btn block text-center">
-          Start
-        </a>
+        <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6 border border-green-200">
+          <div class="flex items-center justify-between gap-4">
+            <div>
+              <h2 class="text-xl font-bold text-green-900">📚 HSK 1 Lesson 4-6 Vocabulary</h2>
+              <p class="text-gray-700">Chinese vocabulary flash cards.</p>
+            </div>
+            <a href="/game/hsk"
+               class="bg-green-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-green-700 btn whitespace-nowrap shrink-0">
+              Start
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
 
     <div class="text-center mt-8">
       <p class="text-sm text-gray-500">Choose a game to start your Mandarin learning journey!</p>
