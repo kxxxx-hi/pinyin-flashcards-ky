@@ -29,7 +29,7 @@ HOMEPAGE_HTML = r"""<!doctype html>
   </header>
 
   <main class="space-y-6">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="grid grid-cols-1 gap-6">
       <!-- Game 1: Pinyin Listening -->
       <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-6 border border-indigo-200">
         <h2 class="text-xl font-bold text-indigo-900 mb-3">🎵 Pinyin Tone Listening</h2>
