@@ -55,5 +55,17 @@
     { "text": "包子", "en": "steamed bun", "correct": "bao1 zi", "distractor": "bao2 zi" },
     { "text": "面条", "en": "noodles", "correct": "mian4 tiao2", "distractor": "mian3 tiao2" },
     { "text": "米饭", "en": "rice (cooked)", "correct": "mi3 fan4", "distractor": "mi4 fan4" }
+  ],
+  "hskFlashcards": [
+    { "english": "book", "correct": {"chinese": "书", "pinyin": "shu1"}, "distractors": [{"chinese": "树", "pinyin": "shu4"}, {"chinese": "水", "pinyin": "shui3"}, {"chinese": "谁", "pinyin": "shui2"}] },
+    { "english": "pen", "correct": {"chinese": "笔", "pinyin": "bi3"}, "distractors": [{"chinese": "比", "pinyin": "bi3"}, {"chinese": "被", "pinyin": "bei4"}, {"chinese": "北", "pinyin": "bei3"}] },
+    { "english": "school", "correct": {"chinese": "学校", "pinyin": "xue2 xiao4"}, "distractors": [{"chinese": "学生", "pinyin": "xue2 sheng1"}, {"chinese": "学习", "pinyin": "xue2 xi2"}, {"chinese": "学问", "pinyin": "xue2 wen4"}] },
+    { "english": "home", "correct": {"chinese": "家", "pinyin": "jia1"}, "distractors": [{"chinese": "加", "pinyin": "jia1"}, {"chinese": "假", "pinyin": "jia3"}, {"chinese": "价", "pinyin": "jia4"}] },
+    { "english": "food", "correct": {"chinese": "食物", "pinyin": "shi2 wu4"}, "distractors": [{"chinese": "时间", "pinyin": "shi2 jian1"}, {"chinese": "时候", "pinyin": "shi2 hou4"}, {"chinese": "世界", "pinyin": "shi4 jie4"}] },
+    { "english": "water", "correct": {"chinese": "水", "pinyin": "shui3"}, "distractors": [{"chinese": "书", "pinyin": "shu1"}, {"chinese": "树", "pinyin": "shu4"}, {"chinese": "谁", "pinyin": "shui2"}] },
+    { "english": "money", "correct": {"chinese": "钱", "pinyin": "qian2"}, "distractors": [{"chinese": "前", "pinyin": "qian2"}, {"chinese": "千", "pinyin": "qian1"}, {"chinese": "浅", "pinyin": "qian3"}] },
+    { "english": "time", "correct": {"chinese": "时间", "pinyin": "shi2 jian1"}, "distractors": [{"chinese": "时候", "pinyin": "shi2 hou4"}, {"chinese": "世界", "pinyin": "shi4 jie4"}, {"chinese": "食物", "pinyin": "shi2 wu4"}] },
+    { "english": "friend", "correct": {"chinese": "朋友", "pinyin": "peng2 you3"}, "distractors": [{"chinese": "朋友", "pinyin": "peng2 you5"}, {"chinese": "家人", "pinyin": "jia1 ren2"}, {"chinese": "同学", "pinyin": "tong2 xue2"}] },
+    { "english": "work", "correct": {"chinese": "工作", "pinyin": "gong1 zuo4"}, "distractors": [{"chinese": "学习", "pinyin": "xue2 xi2"}, {"chinese": "生活", "pinyin": "sheng1 huo2"}, {"chinese": "事情", "pinyin": "shi4 qing2"}] }
   ]
 }
