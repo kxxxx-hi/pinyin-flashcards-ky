@@ -32,7 +32,7 @@ HOMEPAGE_HTML = r"""<!doctype html>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <!-- Game 1: Pinyin Listening -->
       <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-6 border border-indigo-200">
-        <h2 class="text-xl font-bold text-indigo-900 mb-3">🎵 Pinyin Listening Game</h2>
+        <h2 class="text-xl font-bold text-indigo-900 mb-3">🎵 Pinyin Tone Listening</h2>
         <p class="text-gray-700 mb-4">Listen to Chinese words and choose the correct pinyin pronunciation.</p>
         <a href="/game/pinyin" class="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 btn block text-center">
           Play Game
@@ -41,8 +41,8 @@ HOMEPAGE_HTML = r"""<!doctype html>
 
       <!-- Game 2: HSK Flash Cards -->
       <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6 border border-green-200">
-        <h2 class="text-xl font-bold text-green-900 mb-3">📚 HSK 1 Lesson 4-6</h2>
-        <p class="text-gray-700 mb-4">Learn vocabulary with English to Chinese flash cards including pinyin.</p>
+        <h2 class="text-xl font-bold text-green-900 mb-3">📚 HSK 1 Lesson 4-6 Vocabulary</h2>
+        <p class="text-gray-700 mb-4">Chinese vocabulary flash cards.</p>
         <a href="/game/hsk" class="w-full bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 btn block text-center">
           Play Game
         </a>
