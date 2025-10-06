@@ -94,5 +94,38 @@
     { "english": "1 of July", "correct": {"chinese": "七月一日", "pinyin": "qī yuè yī rì"}, "distractors": [{"chinese": "七月一号", "pinyin": "qī yuè yī hào"}, {"chinese": "七月七日", "pinyin": "qī yuè qī rì"}, {"chinese": "一月七日", "pinyin": "yī yuè qī rì"}] },
     { "english": "... years of age", "correct": {"chinese": "岁", "pinyin": "suì"}, "distractors": [{"chinese": "年", "pinyin": "nián"}, {"chinese": "月", "pinyin": "yuè"}, {"chinese": "天", "pinyin": "tiān"}] },
     { "english": "How many years of age?", "correct": {"chinese": "几岁 / 多少岁", "pinyin": "jǐ suì / duōshǎo suì"}, "distractors": [{"chinese": "多大", "pinyin": "duōdà"}, {"chinese": "几年", "pinyin": "jǐ nián"}, {"chinese": "几月", "pinyin": "jǐ yuè"}] }
+    
+    { "english": "Hello", "correct": {"chinese": "你好", "pinyin": "nǐ hǎo"}, "distractors": [{"chinese": "您好", "pinyin": "nín hǎo"}, {"chinese": "你们好", "pinyin": "nǐmen hǎo"}, {"chinese": "早上好", "pinyin": "zǎoshang hǎo"}] },
+    { "english": "Goodbye", "correct": {"chinese": "再见", "pinyin": "zàijiàn"}, "distractors": [{"chinese": "拜拜", "pinyin": "bāibai"}, {"chinese": "回头见", "pinyin": "huítóu jiàn"}, {"chinese": "晚安", "pinyin": "wǎn'ān"}] },
+    { "english": "Thank you", "correct": {"chinese": "谢谢", "pinyin": "xièxie"}, "distractors": [{"chinese": "多谢", "pinyin": "duōxiè"}, {"chinese": "非常感谢", "pinyin": "fēicháng gǎnxiè"}, {"chinese": "辛苦了", "pinyin": "xīnkǔ le"}] },
+    { "english": "You're welcome", "correct": {"chinese": "不客气", "pinyin": "bù kèqi"}, "distractors": [{"chinese": "没关系", "pinyin": "méi guānxi"}, {"chinese": "不用谢", "pinyin": "bú yòng xiè"}, {"chinese": "小意思", "pinyin": "xiǎo yìsi"}] },
+    { "english": "Sorry", "correct": {"chinese": "对不起", "pinyin": "duìbuqǐ"}, "distractors": [{"chinese": "不好意思", "pinyin": "bù hǎo yìsi"}, {"chinese": "没关系", "pinyin": "méi guānxi"}, {"chinese": "请原谅", "pinyin": "qǐng yuánliàng"}] },
+    { "english": "One", "correct": {"chinese": "一", "pinyin": "yī"}, "distractors": [{"chinese": "七", "pinyin": "qī"}, {"chinese": "二", "pinyin": "èr"}, {"chinese": "十", "pinyin": "shí"}] },
+    { "english": "Two", "correct": {"chinese": "二", "pinyin": "èr"}, "distractors": [{"chinese": "两", "pinyin": "liǎng"}, {"chinese": "三", "pinyin": "sān"}, {"chinese": "五", "pinyin": "wǔ"}] },
+    { "english": "Three", "correct": {"chinese": "三", "pinyin": "sān"}, "distractors": [{"chinese": "四", "pinyin": "sì"}, {"chinese": "十三", "pinyin": "shísān"}, {"chinese": "二十三", "pinyin": "èrshísān"}] },
+    { "english": "Four", "correct": {"chinese": "四", "pinyin": "sì"}, "distractors": [{"chinese": "十", "pinyin": "shí"}, {"chinese": "十四", "pinyin": "shísì"}, {"chinese": "六", "pinyin": "liù"}] },
+    { "english": "Five", "correct": {"chinese": "五", "pinyin": "wǔ"}, "distractors": [{"chinese": "午", "pinyin": "wǔ"}, {"chinese": "无", "pinyin": "wú"}, {"chinese": "舞", "pinyin": "wǔ"}] },
+    { "english": "Thirty-five", "correct": {"chinese": "三十五", "pinyin": "sānshíwǔ"}, "distractors": [{"chinese": "三十四", "pinyin": "sānshísì"}, {"chinese": "五十三", "pinyin": "wǔshísān"}, {"chinese": "三十五十", "pinyin": "sānshí wǔshí"}] },
+    { "english": "Ninety-nine", "correct": {"chinese": "九十九", "pinyin": "jiǔshíjiǔ"}, "distractors": [{"chinese": "九十八", "pinyin": "jiǔshíbā"}, {"chinese": "九十", "pinyin": "jiǔshí"}, {"chinese": "一百", "pinyin": "yìbǎi"}] },
+    { "english": "Twenty-nine years old", "correct": {"chinese": "二十九岁", "pinyin": "èrshíjiǔ suì"}, "distractors": [{"chinese": "二十八岁", "pinyin": "èrshíbā suì"}, {"chinese": "三十岁", "pinyin": "sānshí suì"}, {"chinese": "十九岁", "pinyin": "shíjiǔ suì"}] },
+    { "english": "Three yuan", "correct": {"chinese": "三块钱", "pinyin": "sān kuài qián"}, "distractors": [{"chinese": "四块钱", "pinyin": "sì kuài qián"}, {"chinese": "三十块钱", "pinyin": "sānshí kuài qián"}, {"chinese": "两块钱", "pinyin": "liǎng kuài qián"}] },
+    { "english": "How many yuan", "correct": {"chinese": "几块", "pinyin": "jǐ kuài"}, "distractors": [{"chinese": "多少钱", "pinyin": "duōshǎo qián"}, {"chinese": "几元", "pinyin": "jǐ yuán"}, {"chinese": "几块钱", "pinyin": "jǐ kuài qián"}] },
+    { "english": "How many", "correct": {"chinese": "几", "pinyin": "jǐ"}, "distractors": [{"chinese": "多少", "pinyin": "duōshǎo"}, {"chinese": "哪个", "pinyin": "nǎ ge"}, {"chinese": "哪", "pinyin": "nǎ"}] },
+    { "english": "Like", "correct": {"chinese": "喜欢", "pinyin": "xǐhuan"}, "distractors": [{"chinese": "爱", "pinyin": "ài"}, {"chinese": "想", "pinyin": "xiǎng"}, {"chinese": "要", "pinyin": "yào"}] },
+    { "english": "Drink", "correct": {"chinese": "喝", "pinyin": "hē"}, "distractors": [{"chinese": "吃", "pinyin": "chī"}, {"chinese": "睡", "pinyin": "shuì"}, {"chinese": "看", "pinyin": "kàn"}] },
+    { "english": "Eat", "correct": {"chinese": "吃", "pinyin": "chī"}, "distractors": [{"chinese": "喝", "pinyin": "hē"}, {"chinese": "看", "pinyin": "kàn"}, {"chinese": "用", "pinyin": "yòng"}] },
+    { "english": "One (for long/narrow things)", "correct": {"chinese": "一条", "pinyin": "yī tiáo"}, "distractors": [{"chinese": "一只", "pinyin": "yī zhī"}, {"chinese": "一个", "pinyin": "yī gè"}, {"chinese": "一杯", "pinyin": "yī bēi"}] },
+    { "english": "One (for animals)", "correct": {"chinese": "一只", "pinyin": "yī zhī"}, "distractors": [{"chinese": "一条", "pinyin": "yī tiáo"}, {"chinese": "一头", "pinyin": "yī tóu"}, {"chinese": "一个", "pinyin": "yī gè"}] },
+    { "english": "One (general)", "correct": {"chinese": "一个", "pinyin": "yī gè"}, "distractors": [{"chinese": "一只", "pinyin": "yī zhī"}, {"chinese": "一条", "pinyin": "yī tiáo"}, {"chinese": "一杯", "pinyin": "yī bēi"}] },
+    { "english": "This", "correct": {"chinese": "这个", "pinyin": "zhè ge"}, "distractors": [{"chinese": "那个", "pinyin": "nà ge"}, {"chinese": "这些", "pinyin": "zhèxiē"}, {"chinese": "那边", "pinyin": "nà biān"}] },
+    { "english": "That", "correct": {"chinese": "那个", "pinyin": "nà ge"}, "distractors": [{"chinese": "这个", "pinyin": "zhè ge"}, {"chinese": "那边", "pinyin": "nà biān"}, {"chinese": "那些", "pinyin": "nàxiē"}] },
+    { "english": "One cat", "correct": {"chinese": "一只猫", "pinyin": "yī zhī māo"}, "distractors": [{"chinese": "一条猫", "pinyin": "yī tiáo māo"}, {"chinese": "一只狗", "pinyin": "yī zhī gǒu"}, {"chinese": "两只猫", "pinyin": "liǎng zhī māo"}] },
+    { "english": "One fish", "correct": {"chinese": "一条鱼", "pinyin": "yī tiáo yú"}, "distractors": [{"chinese": "一只鱼", "pinyin": "yī zhī yú"}, {"chinese": "两条鱼", "pinyin": "liǎng tiáo yú"}, {"chinese": "一条猫", "pinyin": "yī tiáo māo"}] },
+    { "english": "One cup", "correct": {"chinese": "一杯", "pinyin": "yī bēi"}, "distractors": [{"chinese": "一个", "pinyin": "yī gè"}, {"chinese": "一瓶", "pinyin": "yī píng"}, {"chinese": "一碗", "pinyin": "yī wǎn"}] },
+    { "english": "Cup", "correct": {"chinese": "杯", "pinyin": "bēi"}, "distractors": [{"chinese": "杯子", "pinyin": "bēizi"}, {"chinese": "碗", "pinyin": "wǎn"}, {"chinese": "瓶", "pinyin": "píng"}] },
+    { "english": "A cup of coffee", "correct": {"chinese": "一杯咖啡", "pinyin": "yī bēi kāfēi"}, "distractors": [{"chinese": "一杯茶", "pinyin": "yī bēi chá"}, {"chinese": "一碗咖啡", "pinyin": "yī wǎn kāfēi"}, {"chinese": "两杯咖啡", "pinyin": "liǎng bēi kāfēi"}] },
+    { "english": "I like coffee", "correct": {"chinese": "我喜欢咖啡", "pinyin": "wǒ xǐhuan kāfēi"}, "distractors": [{"chinese": "我喝咖啡", "pinyin": "wǒ hē kāfēi"}, {"chinese": "我不喜欢咖啡", "pinyin": "wǒ bù xǐhuan kāfēi"}, {"chinese": "我喜欢茶", "pinyin": "wǒ xǐhuan chá"}] },
+    { "english": "The cat doesn’t like coffee", "correct": {"chinese": "猫不喜欢咖啡", "pinyin": "māo bù xǐhuan kāfēi"}, "distractors": [{"chinese": "猫喜欢咖啡", "pinyin": "māo xǐhuan kāfēi"}, {"chinese": "猫喝咖啡", "pinyin": "māo hē kāfēi"}, {"chinese": "狗不喜欢咖啡", "pinyin": "gǒu bù xǐhuan kāfēi"}] }
+
   ]
 }
