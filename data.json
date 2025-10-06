@@ -93,8 +93,7 @@
     { "english": "Day / date", "correct": {"chinese": "日", "pinyin": "rì"}, "distractors": [{"chinese": "号", "pinyin": "hào"}, {"chinese": "天", "pinyin": "tiān"}, {"chinese": "日子", "pinyin": "rìzi"}] },
     { "english": "1 of July", "correct": {"chinese": "七月一日", "pinyin": "qī yuè yī rì"}, "distractors": [{"chinese": "七月一号", "pinyin": "qī yuè yī hào"}, {"chinese": "七月七日", "pinyin": "qī yuè qī rì"}, {"chinese": "一月七日", "pinyin": "yī yuè qī rì"}] },
     { "english": "... years of age", "correct": {"chinese": "岁", "pinyin": "suì"}, "distractors": [{"chinese": "年", "pinyin": "nián"}, {"chinese": "月", "pinyin": "yuè"}, {"chinese": "天", "pinyin": "tiān"}] },
-    { "english": "How many years of age?", "correct": {"chinese": "几岁 / 多少岁", "pinyin": "jǐ suì / duōshǎo suì"}, "distractors": [{"chinese": "多大", "pinyin": "duōdà"}, {"chinese": "几年", "pinyin": "jǐ nián"}, {"chinese": "几月", "pinyin": "jǐ yuè"}] }
-    
+    { "english": "How many years of age?", "correct": {"chinese": "几岁 / 多少岁", "pinyin": "jǐ suì / duōshǎo suì"}, "distractors": [{"chinese": "多大", "pinyin": "duōdà"}, {"chinese": "几年", "pinyin": "jǐ nián"}, {"chinese": "几月", "pinyin": "jǐ yuè"}] },
     { "english": "Hello", "correct": {"chinese": "你好", "pinyin": "nǐ hǎo"}, "distractors": [{"chinese": "您好", "pinyin": "nín hǎo"}, {"chinese": "你们好", "pinyin": "nǐmen hǎo"}, {"chinese": "早上好", "pinyin": "zǎoshang hǎo"}] },
     { "english": "Goodbye", "correct": {"chinese": "再见", "pinyin": "zàijiàn"}, "distractors": [{"chinese": "拜拜", "pinyin": "bāibai"}, {"chinese": "回头见", "pinyin": "huítóu jiàn"}, {"chinese": "晚安", "pinyin": "wǎn'ān"}] },
     { "english": "Thank you", "correct": {"chinese": "谢谢", "pinyin": "xièxie"}, "distractors": [{"chinese": "多谢", "pinyin": "duōxiè"}, {"chinese": "非常感谢", "pinyin": "fēicháng gǎnxiè"}, {"chinese": "辛苦了", "pinyin": "xīnkǔ le"}] },
