@@ -29,35 +29,34 @@ HOMEPAGE_HTML = r"""<!doctype html>
   </header>
 
   <main class="space-y-6">
-    <div class="grid grid-cols-1 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <!-- Game 1: Pinyin Listening -->
-        <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-6 border border-indigo-200">
-          <div class="flex items-center justify-between gap-4">
-            <div>
-              <h2 class="text-xl font-bold text-indigo-900">🎵 Pinyin Tone Listening</h2>
-              <p class="text-gray-700">Listen to Chinese words and choose the correct pinyin pronunciation.</p>
-            </div>
-            <a href="/game/pinyin"
-               class="bg-indigo-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-indigo-700 btn whitespace-nowrap shrink-0">
-              Start
-            </a>
-          </div>
-        </div>
-        
-      <!-- Game 2: HSK Flash Cards -->
-        <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6 border border-green-200">
-          <div class="flex items-center justify-between gap-4">
-            <div>
-              <h2 class="text-xl font-bold text-green-900">📚 HSK 1 Lesson 4-6 Vocabulary</h2>
-              <p class="text-gray-700">Chinese vocabulary flash cards.</p>
-            </div>
-            <a href="/game/hsk"
-               class="bg-green-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-green-700 btn whitespace-nowrap shrink-0">
-              Start
-            </a>
-          </div>
-        </div>
+      <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-6 border border-indigo-200">
+        <h2 class="text-xl font-bold text-indigo-900 mb-3">🎵 Pinyin Listening Game</h2>
+        <p class="text-gray-700 mb-4">Listen to Chinese words and choose the correct pinyin pronunciation.</p>
+        <a href="/game/pinyin" class="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 btn block text-center">
+          Play Game
+        </a>
       </div>
+
+      <!-- Game 2: HSK Lesson 4-6 -->
+      <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6 border border-green-200">
+        <h2 class="text-xl font-bold text-green-900 mb-3">📚 HSK 1 Lesson 4-6</h2>
+        <p class="text-gray-700 mb-4">Learn vocabulary with English to Chinese flash cards including pinyin.</p>
+        <a href="/game/hsk-4-6" class="w-full bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 btn block text-center">
+          Play Game
+        </a>
+      </div>
+
+      <!-- Game 3: HSK Lesson 7-9 -->
+      <div class="bg-gradient-to-br from-orange-50 to-pink-50 rounded-xl p-6 border border-orange-200">
+        <h2 class="text-xl font-bold text-orange-900 mb-3">📖 HSK 1 Lesson 7-9</h2>
+        <p class="text-gray-700 mb-4">Continue learning with more vocabulary flash cards and pinyin practice.</p>
+        <a href="/game/hsk-7-9" class="w-full bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-700 btn block text-center">
+          Play Game
+        </a>
+      </div>
+    </div>
 
     <div class="text-center mt-8">
       <p class="text-sm text-gray-500">Choose an exercise to practice Chinese!</p>
@@ -273,7 +272,7 @@ HSK_GAME_HTML = r"""<!doctype html>
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>HSK 1 Lesson 4-6 Flash Cards</title>
+<title>__LESSON_TITLE__ Flash Cards</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
@@ -292,7 +291,7 @@ HSK_GAME_HTML = r"""<!doctype html>
       <button onclick="window.location.href='/'" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 btn">← Home</button>
       <div></div>
     </div>
-    <h1 class="text-2xl md:text-3xl font-extrabold">HSK 1 Lesson 4-6 Flash Cards</h1>
+    <h1 class="text-2xl md:text-3xl font-extrabold">__LESSON_TITLE__ Flash Cards</h1>
     <p class="text-gray-500 mt-1">Read the English word and choose the correct Chinese translation with pinyin.</p>
   </header>
 
@@ -466,12 +465,26 @@ def pinyin_game() -> Response:
     html = PINYIN_GAME_HTML.replace("__DATA__", json.dumps(data, ensure_ascii=False))
     return Response(content=html, media_type="text/html")
 
-@app.get("/game/hsk")
-def hsk_game() -> Response:
+@app.get("/game/hsk-4-6")
+def hsk_game_4_6() -> Response:
     data_path = Path("data.json")
     try:
-        data = json.loads(data_path.read_text(encoding="utf-8"))
+        full_data = json.loads(data_path.read_text(encoding="utf-8"))
+        data = {"hskFlashcards": full_data.get("hskLesson4to6", [])}
     except Exception:
         data = {"hskFlashcards": []}
     html = HSK_GAME_HTML.replace("__DATA__", json.dumps(data, ensure_ascii=False))
+    html = html.replace("__LESSON_TITLE__", "HSK 1 Lesson 4-6")
+    return Response(content=html, media_type="text/html")
+
+@app.get("/game/hsk-7-9")
+def hsk_game_7_9() -> Response:
+    data_path = Path("data.json")
+    try:
+        full_data = json.loads(data_path.read_text(encoding="utf-8"))
+        data = {"hskFlashcards": full_data.get("hskLesson7to9", [])}
+    except Exception:
+        data = {"hskFlashcards": []}
+    html = HSK_GAME_HTML.replace("__DATA__", json.dumps(data, ensure_ascii=False))
+    html = html.replace("__LESSON_TITLE__", "HSK 1 Lesson 7-9")
     return Response(content=html, media_type="text/html")
