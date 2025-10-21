@@ -466,7 +466,7 @@ def homepage() -> Response:
 
 @app.get("/game/pinyin")
 def pinyin_game() -> Response:
-    data_path = Path("data.json")
+    data_path = Path(__file__).parent.parent / "data.json"
     try:
         data = json.loads(data_path.read_text(encoding="utf-8"))
     except Exception:
@@ -476,7 +476,7 @@ def pinyin_game() -> Response:
 
 @app.get("/game/hsk-4-6")
 def hsk_game_4_6() -> Response:
-    data_path = Path("data.json")
+    data_path = Path(__file__).parent.parent / "data.json"
     try:
         full_data = json.loads(data_path.read_text(encoding="utf-8"))
         data = {"hskFlashcards": full_data.get("hskLesson4to6", [])}
@@ -488,7 +488,7 @@ def hsk_game_4_6() -> Response:
 
 @app.get("/game/hsk-7-9")
 def hsk_game_7_9() -> Response:
-    data_path = Path("data.json")
+    data_path = Path(__file__).parent.parent / "data.json"
     try:
         full_data = json.loads(data_path.read_text(encoding="utf-8"))
         data = {"hskFlashcards": full_data.get("hskLesson7to9", [])}
@@ -500,11 +500,12 @@ def hsk_game_7_9() -> Response:
 
 @app.get("/game/hsk-10-12")
 def hsk_game_10_12() -> Response:
-    data_path = Path("data.json")
+    data_path = Path(__file__).parent.parent / "data.json"
     try:
         full_data = json.loads(data_path.read_text(encoding="utf-8"))
         data = {"hskFlashcards": full_data.get("hskLesson10to12", [])}
-    except Exception:
+    except Exception as e:
+        print(f"Error loading data: {e}")  # Debug print
         data = {"hskFlashcards": []}
     html = HSK_GAME_HTML.replace("__DATA__", json.dumps(data, ensure_ascii=False))
     html = html.replace("__LESSON_TITLE__", "HSK 1 Lesson 10-12")
