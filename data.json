@@ -185,6 +185,51 @@
 { "english": "One hundred thousand", "correct": { "chinese": "十万", "pinyin": "shi2 wan4" }, "distractors": [ { "chinese": "一百万", "pinyin": "yi1 bai3 wan4" }, { "chinese": "一万", "pinyin": "yi1 wan4" }, { "chinese": "一千", "pinyin": "yi1 qian1" } ] },
 { "english": "One million", "correct": { "chinese": "一百万", "pinyin": "yi1 bai3 wan4" }, "distractors": [ { "chinese": "一千万", "pinyin": "yi1 qian1 wan4" }, { "chinese": "十万", "pinyin": "shi2 wan4" }, { "chinese": "一亿", "pinyin": "yi1 yi4" } ] },
 { "english": "Ten million", "correct": { "chinese": "一千万", "pinyin": "yi1 qian1 wan4" }, "distractors": [ { "chinese": "一百万", "pinyin": "yi1 bai3 wan4" }, { "chinese": "一亿", "pinyin": "yi1 yi4" }, { "chinese": "十万", "pinyin": "shi2 wan4" } ] },
-{ "english": "One hundred million", "correct": { "chinese": "一亿", "pinyin": "yi1 yi4" }, "distractors": [ { "chinese": "一千万", "pinyin": "yi1 qian1 wan4" }, { "chinese": "十亿", "pinyin": "shi2 yi4" }, { "chinese": "十万", "pinyin": "shi2 wan4" } ] }
+{ "english": "One hundred million", "correct": { "chinese": "一亿", "pinyin": "yi1 yi4" }, "distractors": [ { "chinese": "一千万", "pinyin": "yi1 qian1 wan4" }, { "chinese": "十亿", "pinyin": "shi2 yi4" }, { "chinese": "十万", "pinyin": "shi2 wan4" } ] },
+  {
+"english": "Not tasty",
+"correct": { "chinese": "不好吃", "pinyin": "bu4 hao3 chi1" },
+"distractors": [
+{ "chinese": "不怎么好吃", "pinyin": "bu4 zen3 me hao3 chi1" },
+{ "chinese": "很好吃", "pinyin": "hen3 hao3 chi1" },
+{ "chinese": "非常好吃", "pinyin": "fei1 chang2 hao3 chi1" }
+]
+},
+{
+"english": "Not very tasty",
+"correct": { "chinese": "不怎么好吃", "pinyin": "bu4 zen3 me hao3 chi1" },
+"distractors": [
+{ "chinese": "不好吃", "pinyin": "bu4 hao3 chi1" },
+{ "chinese": "很好吃", "pinyin": "hen3 hao3 chi1" },
+{ "chinese": "非常好吃", "pinyin": "fei1 chang2 hao3 chi1" }
+]
+},
+{
+"english": "Tasty",
+"correct": { "chinese": "很好吃", "pinyin": "hen3 hao3 chi1" },
+"distractors": [
+{ "chinese": "不怎么好吃", "pinyin": "bu4 zen3 me hao3 chi1" },
+{ "chinese": "不好吃", "pinyin": "bu4 hao3 chi1" },
+{ "chinese": "非常好吃", "pinyin": "fei1 chang2 hao3 chi1" }
+]
+},
+{
+"english": "Very tasty",
+"correct": { "chinese": "非常好吃", "pinyin": "fei1 chang2 hao3 chi1" },
+"distractors": [
+{ "chinese": "很好吃", "pinyin": "hen3 hao3 chi1" },
+{ "chinese": "不怎么好吃", "pinyin": "bu4 zen3 me hao3 chi1" },
+{ "chinese": "不好吃", "pinyin": "bu4 hao3 chi1" }
+]
+},
+{
+"english": "So tasty",
+"correct": { "chinese": "太好吃了", "pinyin": "tai4 hao3 chi1 le" },
+"distractors": [
+{ "chinese": "非常好吃", "pinyin": "fei1 chang2 hao3 chi1" },
+{ "chinese": "很好吃", "pinyin": "hen3 hao3 chi1" },
+{ "chinese": "不怎么好吃", "pinyin": "bu4 zen3 me hao3 chi1" }
+]
+}
 ]
 }
