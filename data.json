@@ -147,30 +147,30 @@
 { "english": "Good to use", "correct": { "chinese": "好用", "pinyin": "hao3 yong4" }, "distractors": [ { "chinese": "好吃", "pinyin": "hao3 chi1" }, { "chinese": "好喝", "pinyin": "hao3 he1" }, { "chinese": "好看", "pinyin": "hao3 kan4" } ] },
 { "english": "Go", "correct": { "chinese": "去", "pinyin": "qu4" }, "distractors": [ { "chinese": "来", "pinyin": "lai2" }, { "chinese": "走", "pinyin": "zou3" }, { "chinese": "回", "pinyin": "hui2" } ] },
 { "english": "Come", "correct": { "chinese": "来", "pinyin": "lai2" }, "distractors": [ { "chinese": "去", "pinyin": "qu4" }, { "chinese": "走", "pinyin": "zou3" }, { "chinese": "回", "pinyin": "hui2" } ] },
-{ "english": "Walk", "correct": { "chinese": "走", "pinyin": "zou3" }, "distractors": [ { "chinese": "去", "pinyin": "qu4" }, { "chinese": "来", "pinyin": "lai2" }, { "chinese": "跑", "pinyin": "pao3" } ] },
+
 { "english": "Return", "correct": { "chinese": "回", "pinyin": "hui2" }, "distractors": [ { "chinese": "去", "pinyin": "qu4" }, { "chinese": "来", "pinyin": "lai2" }, { "chinese": "走", "pinyin": "zou3" } ] },
 { "english": "Drink", "correct": { "chinese": "喝", "pinyin": "he1" }, "distractors": [ { "chinese": "吃", "pinyin": "chi1" }, { "chinese": "看", "pinyin": "kan4" }, { "chinese": "听", "pinyin": "ting1" } ] },
 { "english": "Eat", "correct": { "chinese": "吃", "pinyin": "chi1" }, "distractors": [ { "chinese": "喝", "pinyin": "he1" }, { "chinese": "看", "pinyin": "kan4" }, { "chinese": "听", "pinyin": "ting1" } ] },
 { "english": "Look", "correct": { "chinese": "看", "pinyin": "kan4" }, "distractors": [ { "chinese": "听", "pinyin": "ting1" }, { "chinese": "说", "pinyin": "shuo1" }, { "chinese": "想", "pinyin": "xiang3" } ] },
-{ "english": "Listen", "correct": { "chinese": "听", "pinyin": "ting1" }, "distractors": [ { "chinese": "看", "pinyin": "kan4" }, { "chinese": "说", "pinyin": "shuo1" }, { "chinese": "想", "pinyin": "xiang3" } ] },
+
 { "english": "Speak", "correct": { "chinese": "说", "pinyin": "shuo1" }, "distractors": [ { "chinese": "听", "pinyin": "ting1" }, { "chinese": "看", "pinyin": "kan4" }, { "chinese": "想", "pinyin": "xiang3" } ] },
 { "english": "Think", "correct": { "chinese": "想", "pinyin": "xiang3" }, "distractors": [ { "chinese": "说", "pinyin": "shuo1" }, { "chinese": "听", "pinyin": "ting1" }, { "chinese": "看", "pinyin": "kan4" } ] },
 { "english": "Use", "correct": { "chinese": "用", "pinyin": "yong4" }, "distractors": [ { "chinese": "做", "pinyin": "zuo4" }, { "chinese": "买", "pinyin": "mai3" }, { "chinese": "卖", "pinyin": "mai4" } ] },
-{ "english": "Do", "correct": { "chinese": "做", "pinyin": "zuo4" }, "distractors": [ { "chinese": "用", "pinyin": "yong4" }, { "chinese": "买", "pinyin": "mai3" }, { "chinese": "卖", "pinyin": "mai4" } ] },
+
 { "english": "Buy", "correct": { "chinese": "买", "pinyin": "mai3" }, "distractors": [ { "chinese": "卖", "pinyin": "mai4" }, { "chinese": "用", "pinyin": "yong4" }, { "chinese": "做", "pinyin": "zuo4" } ] },
-{ "english": "Sell", "correct": { "chinese": "卖", "pinyin": "mai4" }, "distractors": [ { "chinese": "买", "pinyin": "mai3" }, { "chinese": "用", "pinyin": "yong4" }, { "chinese": "做", "pinyin": "zuo4" } ] },
+
 { "english": "Work", "correct": { "chinese": "工作", "pinyin": "gong1 zuo4" }, "distractors": [ { "chinese": "学习", "pinyin": "xue2 xi2" }, { "chinese": "生活", "pinyin": "sheng1 huo2" }, { "chinese": "休息", "pinyin": "xiu1 xi" } ] },
 { "english": "Study", "correct": { "chinese": "学习", "pinyin": "xue2 xi2" }, "distractors": [ { "chinese": "工作", "pinyin": "gong1 zuo4" }, { "chinese": "生活", "pinyin": "sheng1 huo2" }, { "chinese": "休息", "pinyin": "xiu1 xi" } ] },
-{ "english": "Life", "correct": { "chinese": "生活", "pinyin": "sheng1 huo2" }, "distractors": [ { "chinese": "工作", "pinyin": "gong1 zuo4" }, { "chinese": "学习", "pinyin": "xue2 xi2" }, { "chinese": "休息", "pinyin": "xiu1 xi" } ] },
-{ "english": "Rest", "correct": { "chinese": "休息", "pinyin": "xiu1 xi" }, "distractors": [ { "chinese": "工作", "pinyin": "gong1 zuo4" }, { "chinese": "学习", "pinyin": "xue2 xi2" }, { "chinese": "生活", "pinyin": "sheng1 huo2" } ] },
+
+
 { "english": "Home", "correct": { "chinese": "家", "pinyin": "jia1" }, "distractors": [ { "chinese": "学校", "pinyin": "xue2 xiao4" }, { "chinese": "公司", "pinyin": "gong1 si1" }, { "chinese": "医院", "pinyin": "yi1 yuan4" } ] },
 { "english": "School", "correct": { "chinese": "学校", "pinyin": "xue2 xiao4" }, "distractors": [ { "chinese": "家", "pinyin": "jia1" }, { "chinese": "公司", "pinyin": "gong1 si1" }, { "chinese": "医院", "pinyin": "yi1 yuan4" } ] },
 { "english": "Company", "correct": { "chinese": "公司", "pinyin": "gong1 si1" }, "distractors": [ { "chinese": "家", "pinyin": "jia1" }, { "chinese": "学校", "pinyin": "xue2 xiao4" }, { "chinese": "医院", "pinyin": "yi1 yuan4" } ] },
-{ "english": "Hospital", "correct": { "chinese": "医院", "pinyin": "yi1 yuan4" }, "distractors": [ { "chinese": "家", "pinyin": "jia1" }, { "chinese": "学校", "pinyin": "xue2 xiao4" }, { "chinese": "公司", "pinyin": "gong1 si1" } ] },
+
 { "english": "Money", "correct": { "chinese": "钱", "pinyin": "qian2" }, "distractors": [ { "chinese": "时间", "pinyin": "shi2 jian1" }, { "chinese": "东西", "pinyin": "dong1 xi" }, { "chinese": "问题", "pinyin": "wen4 ti2" } ] },
 { "english": "Time", "correct": { "chinese": "时间", "pinyin": "shi2 jian1" }, "distractors": [ { "chinese": "钱", "pinyin": "qian2" }, { "chinese": "东西", "pinyin": "dong1 xi" }, { "chinese": "问题", "pinyin": "wen4 ti2" } ] },
 { "english": "Thing", "correct": { "chinese": "东西", "pinyin": "dong1 xi" }, "distractors": [ { "chinese": "钱", "pinyin": "qian2" }, { "chinese": "时间", "pinyin": "shi2 jian1" }, { "chinese": "问题", "pinyin": "wen4 ti2" } ] },
-{ "english": "Question", "correct": { "chinese": "问题", "pinyin": "wen4 ti2" }, "distractors": [ { "chinese": "钱", "pinyin": "qian2" }, { "chinese": "时间", "pinyin": "shi2 jian1" }, { "chinese": "东西", "pinyin": "dong1 xi" } ] },
+
 { "english": "Today", "correct": { "chinese": "今天", "pinyin": "jin1 tian1" }, "distractors": [ { "chinese": "明天", "pinyin": "ming2 tian1" }, { "chinese": "昨天", "pinyin": "zuo2 tian1" }, { "chinese": "后天", "pinyin": "hou4 tian1" } ] },
 { "english": "Tomorrow", "correct": { "chinese": "明天", "pinyin": "ming2 tian1" }, "distractors": [ { "chinese": "今天", "pinyin": "jin1 tian1" }, { "chinese": "昨天", "pinyin": "zuo2 tian1" }, { "chinese": "后天", "pinyin": "hou4 tian1" } ] },
 { "english": "Yesterday", "correct": { "chinese": "昨天", "pinyin": "zuo2 tian1" }, "distractors": [ { "chinese": "今天", "pinyin": "jin1 tian1" }, { "chinese": "明天", "pinyin": "ming2 tian1" }, { "chinese": "后天", "pinyin": "hou4 tian1" } ] },
@@ -230,6 +230,144 @@
 { "chinese": "很好吃", "pinyin": "hen3 hao3 chi1" },
 { "chinese": "不怎么好吃", "pinyin": "bu4 zen3 me hao3 chi1" }
 ]
+},
+  
+{
+"english": "Go home",
+"correct": { "chinese": "回家", "pinyin": "hui2 jia1" },
+"distractors": [
+{ "chinese": "在家", "pinyin": "zai4 jia1" },
+{ "chinese": "回国", "pinyin": "hui2 guo2" },
+{ "chinese": "出门", "pinyin": "chu1 men2" }
+]
+},
+{
+"english": "My home",
+"correct": { "chinese": "我家", "pinyin": "wo3 jia1" },
+"distractors": [
+{ "chinese": "你家", "pinyin": "ni3 jia1" },
+{ "chinese": "他家", "pinyin": "ta1 jia1" },
+{ "chinese": "我国", "pinyin": "wo3 guo2" }
+]
+},
+{
+"english": "Your home",
+"correct": { "chinese": "你家", "pinyin": "ni3 jia1" },
+"distractors": [
+{ "chinese": "我家", "pinyin": "wo3 jia1" },
+{ "chinese": "你们家", "pinyin": "ni3 men jia1" },
+{ "chinese": "学校", "pinyin": "xue2 xiao4" }
+]
+},
+{
+"english": "School",
+"correct": { "chinese": "学校", "pinyin": "xue2 xiao4" },
+"distractors": [
+{ "chinese": "公司", "pinyin": "gong1 si1" },
+{ "chinese": "教室", "pinyin": "jiao4 shi4" },
+{ "chinese": "书店", "pinyin": "shu1 dian4" }
+]
+},
+{
+"english": "There are people at the company",
+"correct": { "chinese": "公司有人", "pinyin": "gong1 si1 you3 ren2" },
+"distractors": [
+{ "chinese": "公司没有人", "pinyin": "gong1 si1 mei2 you3 ren2" },
+{ "chinese": "学校有人", "pinyin": "xue2 xiao4 you3 ren2" },
+{ "chinese": "公司有水", "pinyin": "gong1 si1 you3 shui3" }
+]
+},
+{
+"english": "There is nobody at school",
+"correct": { "chinese": "学校没有人", "pinyin": "xue2 xiao4 mei2 you3 ren2" },
+"distractors": [
+{ "chinese": "学校有人", "pinyin": "xue2 xiao4 you3 ren2" },
+{ "chinese": "公司没有人", "pinyin": "gong1 si1 mei2 you3 ren2" },
+{ "chinese": "学校没有水", "pinyin": "xue2 xiao4 mei2 you3 shui3" }
+]
+},
+{
+"english": "I want a glass of water",
+"correct": { "chinese": "我要一杯水", "pinyin": "wo3 yao4 yi1 bei1 shui3" },
+"distractors": [
+{ "chinese": "我不要水", "pinyin": "wo3 bu2 yao4 shui3" },
+{ "chinese": "我要一杯咖啡", "pinyin": "wo3 yao4 yi1 bei1 ka1 fei1" },
+{ "chinese": "我想喝酒", "pinyin": "wo3 xiang3 he1 jiu3" }
+]
+},
+{
+"english": "Don’t drink coffee",
+"correct": { "chinese": "不要喝咖啡", "pinyin": "bu2 yao4 he1 ka1 fei1" },
+"distractors": [
+{ "chinese": "不要喝酒", "pinyin": "bu2 yao4 he1 jiu3" },
+{ "chinese": "要喝咖啡", "pinyin": "yao4 he1 ka1 fei1" },
+{ "chinese": "不喝水", "pinyin": "bu4 he1 shui3" }
+]
+},
+{
+"english": "Don’t drink alcohol",
+"correct": { "chinese": "不要喝酒", "pinyin": "bu2 yao4 he1 jiu3" },
+"distractors": [
+{ "chinese": "不要喝咖啡", "pinyin": "bu2 yao4 he1 ka1 fei1" },
+{ "chinese": "要喝酒", "pinyin": "yao4 he1 jiu3" },
+{ "chinese": "不喝水", "pinyin": "bu4 he1 shui3" }
+]
+},
+{
+"english": "I want to buy a phone",
+"correct": { "chinese": "我想买手机", "pinyin": "wo3 xiang3 mai3 shou3 ji1" },
+"distractors": [
+{ "chinese": "我想卖手机", "pinyin": "wo3 xiang3 mai4 shou3 ji1" },
+{ "chinese": "我已经买手机了", "pinyin": "wo3 yi3 jing1 mai3 shou3 ji1 le" },
+{ "chinese": "我想修手机", "pinyin": "wo3 xiang3 xiu1 shou3 ji1" }
+]
+},
+{
+"english": "I want a cat",
+"correct": { "chinese": "我想要一只猫", "pinyin": "wo3 xiang3 yao4 yi1 zhi1 mao1" },
+"distractors": [
+{ "chinese": "我想猫", "pinyin": "wo3 xiang3 mao1" },
+{ "chinese": "我喜欢猫", "pinyin": "wo3 xi3 huan1 mao1" },
+{ "chinese": "猫想我", "pinyin": "mao1 xiang3 wo3" }
+]
+},
+{
+"english": "The cat doesn’t miss me",
+"correct": { "chinese": "猫不想我", "pinyin": "mao1 bu4 xiang3 wo3" },
+"distractors": [
+{ "chinese": "猫想我", "pinyin": "mao1 xiang3 wo3" },
+{ "chinese": "我不想猫", "pinyin": "wo3 bu4 xiang3 mao1" },
+{ "chinese": "我想猫", "pinyin": "wo3 xiang3 mao1" }
+]
+},
+{
+"english": "I want to drink water",
+"correct": { "chinese": "我想喝水", "pinyin": "wo3 xiang3 he1 shui3" },
+"distractors": [
+{ "chinese": "我不想喝水", "pinyin": "wo3 bu4 xiang3 he1 shui3" },
+{ "chinese": "我想喝酒", "pinyin": "wo3 xiang3 he1 jiu3" },
+{ "chinese": "我想吃水", "pinyin": "wo3 xiang3 chi1 shui3" }
+]
+},
+{
+"english": "I really want to drink water",
+"correct": { "chinese": "我太想喝水了", "pinyin": "wo3 tai4 xiang3 he1 shui3 le" },
+"distractors": [
+{ "chinese": "我想喝水", "pinyin": "wo3 xiang3 he1 shui3" },
+{ "chinese": "我太想吃饭了", "pinyin": "wo3 tai4 xiang3 chi1 fan4 le" },
+{ "chinese": "我不想喝水", "pinyin": "wo3 bu4 xiang3 he1 shui3" }
+]
+},
+{
+"english": "What are you thinking about?",
+"correct": { "chinese": "你在想什么", "pinyin": "ni3 zai4 xiang3 shen2 me" },
+"distractors": [
+{ "chinese": "你在做什么", "pinyin": "ni3 zai4 zuo4 shen2 me" },
+{ "chinese": "你在看什么", "pinyin": "ni3 zai4 kan4 shen2 me" },
+{ "chinese": "你在想我吗", "pinyin": "ni3 zai4 xiang3 wo3 ma" }
+]
 }
+
+
 ]
 }
