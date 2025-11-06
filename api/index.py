@@ -65,6 +65,15 @@ HOMEPAGE_HTML = r"""<!doctype html>
           Play Game
         </a>
       </div>
+
+      <!-- Game 5: HSK Lesson 13-15 -->
+      <div class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-6 border border-teal-200">
+        <h2 class="text-xl font-bold text-teal-900 mb-3">🍽️ HSK 1 Lesson 13-15</h2>
+        <p class="text-gray-700 mb-4">Learn food vocabulary, restaurants, and directional words.</p>
+        <a href="/game/hsk-13-15" class="w-full bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-700 btn block text-center">
+          Play Game
+        </a>
+      </div>
     </div>
 
     <div class="text-center mt-8">
@@ -509,4 +518,17 @@ def hsk_game_10_12() -> Response:
         data = {"hskFlashcards": []}
     html = HSK_GAME_HTML.replace("__DATA__", json.dumps(data, ensure_ascii=False))
     html = html.replace("__LESSON_TITLE__", "HSK 1 Lesson 10-12")
+    return Response(content=html, media_type="text/html")
+
+@app.get("/game/hsk-13-15")
+def hsk_game_13_15() -> Response:
+    data_path = Path(__file__).parent.parent / "data.json"
+    try:
+        full_data = json.loads(data_path.read_text(encoding="utf-8"))
+        data = {"hskFlashcards": full_data.get("hskLesson13to15", [])}
+    except Exception as e:
+        print(f"Error loading data: {e}")  # Debug print
+        data = {"hskFlashcards": []}
+    html = HSK_GAME_HTML.replace("__DATA__", json.dumps(data, ensure_ascii=False))
+    html = html.replace("__LESSON_TITLE__", "HSK 1 Lesson 13-15")
     return Response(content=html, media_type="text/html")

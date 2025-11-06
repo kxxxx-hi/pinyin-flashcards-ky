@@ -367,7 +367,33 @@
 { "chinese": "你在想我吗", "pinyin": "ni3 zai4 xiang3 wo3 ma" }
 ]
 }
-
-
+],
+"hskLesson13to15": [
+{ "english": "Sleep", "correct": { "chinese": "睡觉", "pinyin": "shui4 jiao4" }, "distractors": [ { "chinese": "工作", "pinyin": "gong1 zuo4" }, { "chinese": "学习", "pinyin": "xue2 xi2" }, { "chinese": "吃饭", "pinyin": "chi1 fan4" } ] },
+{ "english": "Store; shop", "correct": { "chinese": "商店", "pinyin": "shang1 dian4" }, "distractors": [ { "chinese": "餐厅", "pinyin": "can1 ting1" }, { "chinese": "银行", "pinyin": "yin2 hang2" }, { "chinese": "学校", "pinyin": "xue2 xiao4" } ] },
+{ "english": "Restaurant", "correct": { "chinese": "餐厅", "pinyin": "can1 ting1" }, "distractors": [ { "chinese": "商店", "pinyin": "shang1 dian4" }, { "chinese": "咖啡店", "pinyin": "ka1 fei1 dian4" }, { "chinese": "银行", "pinyin": "yin2 hang2" } ] },
+{ "english": "Eat; meal", "correct": { "chinese": "吃饭", "pinyin": "chi1 fan4" }, "distractors": [ { "chinese": "喝水", "pinyin": "he1 shui3" }, { "chinese": "睡觉", "pinyin": "shui4 jiao4" }, { "chinese": "工作", "pinyin": "gong1 zuo4" } ] },
+{ "english": "I eat at the restaurant", "correct": { "chinese": "我在餐厅吃饭", "pinyin": "wo3 zai4 can1 ting1 chi1 fan4" }, "distractors": [ { "chinese": "我在家吃饭", "pinyin": "wo3 zai4 jia1 chi1 fan4" }, { "chinese": "他在餐厅吃饭", "pinyin": "ta1 zai4 can1 ting1 chi1 fan4" }, { "chinese": "我在餐厅喝水", "pinyin": "wo3 zai4 can1 ting1 he1 shui3" } ] },
+{ "english": "Chinese food", "correct": { "chinese": "中餐", "pinyin": "zhong1 can1" }, "distractors": [ { "chinese": "西餐", "pinyin": "xi1 can1" }, { "chinese": "早饭", "pinyin": "zao3 fan4" }, { "chinese": "午饭", "pinyin": "wu3 fan4" } ] },
+{ "english": "Western food", "correct": { "chinese": "西餐", "pinyin": "xi1 can1" }, "distractors": [ { "chinese": "中餐", "pinyin": "zhong1 can1" }, { "chinese": "早饭", "pinyin": "zao3 fan4" }, { "chinese": "晚饭", "pinyin": "wan3 fan4" } ] },
+{ "english": "Bank", "correct": { "chinese": "银行", "pinyin": "yin2 hang2" }, "distractors": [ { "chinese": "商店", "pinyin": "shang1 dian4" }, { "chinese": "餐厅", "pinyin": "can1 ting1" }, { "chinese": "学校", "pinyin": "xue2 xiao4" } ] },
+{ "english": "Coffee shop", "correct": { "chinese": "咖啡店", "pinyin": "ka1 fei1 dian4" }, "distractors": [ { "chinese": "餐厅", "pinyin": "can1 ting1" }, { "chinese": "商店", "pinyin": "shang1 dian4" }, { "chinese": "银行", "pinyin": "yin2 hang2" } ] },
+{ "english": "Chinese restaurant", "correct": { "chinese": "中餐厅", "pinyin": "zhong1 can1 ting1" }, "distractors": [ { "chinese": "咖啡店", "pinyin": "ka1 fei1 dian4" }, { "chinese": "商店", "pinyin": "shang1 dian4" }, { "chinese": "银行", "pinyin": "yin2 hang2" } ] },
+{ "english": "McDonald's", "correct": { "chinese": "麦当劳", "pinyin": "mai4 dang1 lao2" }, "distractors": [ { "chinese": "星巴克", "pinyin": "xing1 ba1 ke4" }, { "chinese": "咖啡店", "pinyin": "ka1 fei1 dian4" }, { "chinese": "餐厅", "pinyin": "can1 ting1" } ] },
+{ "english": "Steamed bun", "correct": { "chinese": "包子", "pinyin": "bao1 zi" }, "distractors": [ { "chinese": "饺子", "pinyin": "jiao3 zi" }, { "chinese": "面包", "pinyin": "mian4 bao1" }, { "chinese": "汉堡", "pinyin": "han4 bao3" } ] },
+{ "english": "Dumpling", "correct": { "chinese": "饺子", "pinyin": "jiao3 zi" }, "distractors": [ { "chinese": "包子", "pinyin": "bao1 zi" }, { "chinese": "虾饺", "pinyin": "xia1 jiao3" }, { "chinese": "点心", "pinyin": "dian3 xin1" } ] },
+{ "english": "Shrimp dumpling", "correct": { "chinese": "虾饺", "pinyin": "xia1 jiao3" }, "distractors": [ { "chinese": "饺子", "pinyin": "jiao3 zi" }, { "chinese": "包子", "pinyin": "bao1 zi" }, { "chinese": "点心", "pinyin": "dian3 xin1" } ] },
+{ "english": "Dim sum; dessert", "correct": { "chinese": "点心", "pinyin": "dian3 xin1" }, "distractors": [ { "chinese": "饺子", "pinyin": "jiao3 zi" }, { "chinese": "包子", "pinyin": "bao1 zi" }, { "chinese": "虾饺", "pinyin": "xia1 jiao3" } ] },
+{ "english": "Pasta; Italian noodles", "correct": { "chinese": "意大利面", "pinyin": "yi4 da4 li4 mian4" }, "distractors": [ { "chinese": "面条", "pinyin": "mian4 tiao2" }, { "chinese": "饺子", "pinyin": "jiao3 zi" }, { "chinese": "披萨", "pinyin": "pi1 sa4" } ] },
+{ "english": "Pizza", "correct": { "chinese": "披萨", "pinyin": "pi1 sa4" }, "distractors": [ { "chinese": "意大利面", "pinyin": "yi4 da4 li4 mian4" }, { "chinese": "汉堡", "pinyin": "han4 bao3" }, { "chinese": "面包", "pinyin": "mian4 bao1" } ] },
+{ "english": "Salad", "correct": { "chinese": "沙拉", "pinyin": "sha1 la1" }, "distractors": [ { "chinese": "牛排", "pinyin": "niu2 pai2" }, { "chinese": "汉堡", "pinyin": "han4 bao3" }, { "chinese": "披萨", "pinyin": "pi1 sa4" } ] },
+{ "english": "Steak", "correct": { "chinese": "牛排", "pinyin": "niu2 pai2" }, "distractors": [ { "chinese": "沙拉", "pinyin": "sha1 la1" }, { "chinese": "汉堡", "pinyin": "han4 bao3" }, { "chinese": "包子", "pinyin": "bao1 zi" } ] },
+{ "english": "Bread", "correct": { "chinese": "面包", "pinyin": "mian4 bao1" }, "distractors": [ { "chinese": "包子", "pinyin": "bao1 zi" }, { "chinese": "汉堡", "pinyin": "han4 bao3" }, { "chinese": "饺子", "pinyin": "jiao3 zi" } ] },
+{ "english": "Hamburger", "correct": { "chinese": "汉堡", "pinyin": "han4 bao3" }, "distractors": [ { "chinese": "面包", "pinyin": "mian4 bao1" }, { "chinese": "包子", "pinyin": "bao1 zi" }, { "chinese": "披萨", "pinyin": "pi1 sa4" } ] },
+{ "english": "Starbucks", "correct": { "chinese": "星巴克", "pinyin": "xing1 ba1 ke4" }, "distractors": [ { "chinese": "麦当劳", "pinyin": "mai4 dang1 lao2" }, { "chinese": "咖啡店", "pinyin": "ka1 fei1 dian4" }, { "chinese": "餐厅", "pinyin": "can1 ting1" } ] },
+{ "english": "Up; on", "correct": { "chinese": "上", "pinyin": "shang4" }, "distractors": [ { "chinese": "下", "pinyin": "xia4" }, { "chinese": "左", "pinyin": "zuo3" }, { "chinese": "右", "pinyin": "you4" } ] },
+{ "english": "Down; under", "correct": { "chinese": "下", "pinyin": "xia4" }, "distractors": [ { "chinese": "上", "pinyin": "shang4" }, { "chinese": "左", "pinyin": "zuo3" }, { "chinese": "右", "pinyin": "you4" } ] },
+{ "english": "Left", "correct": { "chinese": "左", "pinyin": "zuo3" }, "distractors": [ { "chinese": "右", "pinyin": "you4" }, { "chinese": "上", "pinyin": "shang4" }, { "chinese": "下", "pinyin": "xia4" } ] },
+{ "english": "Right", "correct": { "chinese": "右", "pinyin": "you4" }, "distractors": [ { "chinese": "左", "pinyin": "zuo3" }, { "chinese": "上", "pinyin": "shang4" }, { "chinese": "下", "pinyin": "xia4" } ] }
 ]
 }
