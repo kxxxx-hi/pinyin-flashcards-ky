@@ -394,6 +394,218 @@
 { "english": "Up; on", "correct": { "chinese": "上", "pinyin": "shang4" }, "distractors": [ { "chinese": "下", "pinyin": "xia4" }, { "chinese": "左", "pinyin": "zuo3" }, { "chinese": "右", "pinyin": "you4" } ] },
 { "english": "Down; under", "correct": { "chinese": "下", "pinyin": "xia4" }, "distractors": [ { "chinese": "上", "pinyin": "shang4" }, { "chinese": "左", "pinyin": "zuo3" }, { "chinese": "右", "pinyin": "you4" } ] },
 { "english": "Left", "correct": { "chinese": "左", "pinyin": "zuo3" }, "distractors": [ { "chinese": "右", "pinyin": "you4" }, { "chinese": "上", "pinyin": "shang4" }, { "chinese": "下", "pinyin": "xia4" } ] },
-{ "english": "Right", "correct": { "chinese": "右", "pinyin": "you4" }, "distractors": [ { "chinese": "左", "pinyin": "zuo3" }, { "chinese": "上", "pinyin": "shang4" }, { "chinese": "下", "pinyin": "xia4" } ] }
+{ "english": "Right", "correct": { "chinese": "右", "pinyin": "you4" }, "distractors": [ { "chinese": "左", "pinyin": "zuo3" }, { "chinese": "上", "pinyin": "shang4" }, { "chinese": "下", "pinyin": "xia4" } ] },
+
+  {
+    "english": "Sour",
+    "correct": {
+      "chinese": "酸",
+      "pinyin": "suan1"
+    },
+    "distractors": [
+      {
+        "chinese": "甜",
+        "pinyin": "tian2"
+      },
+      {
+        "chinese": "苦",
+        "pinyin": "ku3"
+      },
+      {
+        "chinese": "咸",
+        "pinyin": "xian2"
+      }
+    ]
+  },
+  {
+    "english": "Sweet",
+    "correct": {
+      "chinese": "甜",
+      "pinyin": "tian2"
+    },
+    "distractors": [
+      {
+        "chinese": "辣",
+        "pinyin": "la4"
+      },
+      {
+        "chinese": "酸",
+        "pinyin": "suan1"
+      },
+      {
+        "chinese": "温",
+        "pinyin": "wen1"
+      }
+    ]
+  },
+  {
+    "english": "Bitter",
+    "correct": {
+      "chinese": "苦",
+      "pinyin": "ku3"
+    },
+    "distractors": [
+      {
+        "chinese": "辣",
+        "pinyin": "la4"
+      },
+      {
+        "chinese": "热",
+        "pinyin": "re4"
+      },
+      {
+        "chinese": "甜",
+        "pinyin": "tian2"
+      }
+    ]
+  },
+  {
+    "english": "Spicy; hot (in taste)",
+    "correct": {
+      "chinese": "辣",
+      "pinyin": "la4"
+    },
+    "distractors": [
+      {
+        "chinese": "咸",
+        "pinyin": "xian2"
+      },
+      {
+        "chinese": "苦",
+        "pinyin": "ku3"
+      },
+      {
+        "chinese": "冷",
+        "pinyin": "leng3"
+      }
+    ]
+  },
+  {
+    "english": "Salty",
+    "correct": {
+      "chinese": "咸",
+      "pinyin": "xian2"
+    },
+    "distractors": [
+      {
+        "chinese": "酸",
+        "pinyin": "suan1"
+      },
+      {
+        "chinese": "鲜",
+        "pinyin": "xian1"
+      },
+      {
+        "chinese": "烫",
+        "pinyin": "tang4"
+      }
+    ]
+  },
+  {
+    "english": "Fresh; delicious (umami)",
+    "correct": {
+      "chinese": "鲜",
+      "pinyin": "xian1"
+    },
+    "distractors": [
+      {
+        "chinese": "苦",
+        "pinyin": "ku3"
+      },
+      {
+        "chinese": "辣",
+        "pinyin": "la4"
+      },
+      {
+        "chinese": "冰",
+        "pinyin": "bing1"
+      }
+    ]
+  },
+  {
+    "english": "Hot (in temperature); heated",
+    "correct": {
+      "chinese": "热",
+      "pinyin": "re4"
+    },
+    "distractors": [
+      {
+        "chinese": "冷",
+        "pinyin": "leng3"
+      },
+      {
+        "chinese": "温",
+        "pinyin": "wen1"
+      },
+      {
+        "chinese": "咸",
+        "pinyin": "xian2"
+      }
+    ]
+  },
+  {
+    "english": "Warm (temperature)",
+    "correct": {
+      "chinese": "温",
+      "pinyin": "wen1"
+    },
+    "distractors": [
+      {
+        "chinese": "烫",
+        "pinyin": "tang4"
+      },
+      {
+        "chinese": "冰",
+        "pinyin": "bing1"
+      },
+      {
+        "chinese": "辣",
+        "pinyin": "la4"
+      }
+    ]
+  },
+  {
+    "english": "Scalding hot; boiling",
+    "correct": {
+      "chinese": "烫",
+      "pinyin": "tang4"
+    },
+    "distractors": [
+      {
+        "chinese": "温",
+        "pinyin": "wen1"
+      },
+      {
+        "chinese": "冷",
+        "pinyin": "leng3"
+      },
+      {
+        "chinese": "甜",
+        "pinyin": "tian2"
+      }
+    ]
+  },
+  {
+    "english": "Cold (in temperature)",
+    "correct": {
+      "chinese": "冷",
+      "pinyin": "leng3"
+    },
+    "distractors": [
+      {
+        "chinese": "热",
+        "pinyin": "re4"
+      },
+      {
+        "chinese": "烫",
+        "pinyin": "tang4"
+      },
+      {
+        "chinese": "酸",
+        "pinyin": "suan1"
+      }
+    ]
+  }
+
 ]
 }
